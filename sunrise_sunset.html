@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0 0 0 0;
+        background-color: #2c3e50;
+    }
+    .sky {
+        animation: sky 15s;
+    }
+    .sun {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: yellow;
+        animation: sun 15s;
+    }
+
+    .grass {
+        height: 600px;
+        width: 100%;
+        background-color: lightgreen;
+        position: absolute;
+    }
+
+    @keyframes sky {
+        0% {
+             background-color: #2c3e50;
+        }
+        10% {
+            background-color: #FFB7BB;
+        }
+        30% {
+            background-color:  #008EDC;
+        }
+        70% {
+            background-color: #008EDC;
+        }
+        90% {
+            background-color: #FFB7BB;
+        }
+        100% {
+            background-color: #2c3e50;
+        }
+    }
+
+    @keyframes sun {
+        0% {
+            background-color: #FF8C02;
+        }
+        25% {
+            background-color: #F9B900;
+            transform: translate(250px, -100px)
+        }
+        50% {
+            background-color: #F9B900;
+            transform: translate(500px, -125px)
+        }
+        75% {
+            background-color: #F9B900;
+            transform: translate(750px, -100px)
+        }
+        100% {
+            background-color: #E13F01;
+            transform: translate(1000px, 0px)
+        }
+    }
+
+</style>
+<body class="sky">
+    <div class="sun"></div>
+    <div class="grass"></div>
+</body>
+</html>

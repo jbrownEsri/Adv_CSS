@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1:active {
+            color: orange;
+        }
+        h1:hover {
+            background-color: gray;
+        }
+        /*button:hover {*/
+        /*    color: green;*/
+        /*}*/
+        /*button:active {*/
+        /*    background-color: lightgray;*/
+        /*    font-size: 30px;*/
+        /*}*/
+        input:focus {
+            background-color:orange;
+        }
+        
+        #one:active {
+            color: purple;
+        }        
+        #two:hover {
+            color: green;
+        }
+        #three:focus {
+            color:orange;
+        }
+    </style>
+    <body>
+        <h1>I'm an H1</h1>
+        <h1>I'm also an H1</h1>
+        <input type="text"/>
+        <button>Click Me!</button>
+        <h1>Exercise</h1>
+        <button id="one">Turn me purple WHILE a user clicks me</button>
+        <button id="two">Turn me green when a user mouses over me</button>
+        <button id="three">Turn me orange while I have focus (whatever that means)</button>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <style type="text/css">
+        @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+        @import url('https://fonts.googleapis.com/css?family=Raleway:200');
+        
+        /*MUST START WITH @keyframes + descriptive name*/
+        
+        p {
+            animation-name: rainbowtext; /*matches the keyframes*/
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+        }
+        /*OTHER NEWER ANIMATION PROPERTIES!*/
+        /*animation-iteration-count*/
+        /*animation-fill-mode*/
+        /*animation-direction*/
+        /*animation-play-state*/
+        
+        @keyframes rainbowtext {
+            0%{
+                color: red;
+                font-size: 0px;
+            }
+            25%{
+                color: orange;
+            }
+            50%{
+                color: yellow;
+                font-size: 80px;
+                transform: translateX(200px);
+            }
+            /*This is the middle of the animation*/
+            75%{
+                color: green;
+            }
+            85%{
+                color:purple;
+            }
+            100%{
+                color: blue;
+                font-size: 20px;
+            }
+        }
+        
+    </style>
+    <body>
+        <p>Hello</p>
+    </body>
+</html>

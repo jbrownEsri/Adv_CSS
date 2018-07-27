@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <style type="text/css">
+        p {
+            width: 50px;
+            height: 50px;
+            background-color: #1abc9c;
+            color: #ecf0f1;
+            border: 2px solid #2c3e50;
+            transform: translateX(200px);
+        }
+        .move-right {
+            transform: translateX(100px);
+        }
+        .move-left {
+            transform: translateX(-5px);
+        }
+        .move-down {
+            transform: translateY(30px);
+        }
+        p:hover {
+            transform: translate(200px, 200px);
+        }
+        .transformed {
+            background-color: #3498db;
+            transform-origin: top left;
+            transform: scale(2, 3);
+        }
+        .rotated {
+            transform: rotate(90deg) scale(2);
+            /*more params*/
+            /*degrees, gradians (400 = 360 degrees); radians 2*PI*r, and TURNS (0.5turn)*/
+            transform-origin: right bottom;
+            /*PREFIXES*/
+            /*-webkit-transform: rotate(90deg); Chrome*/
+            /*-ms-transform: rotate(90deg); Mozilla*/
+            /*Use AUTOPREFIXER like autoprefixer.github.io*/
+            /*pleeease.io*/
+        }
+        
+    </style>
+    <body>
+        <h3>Translate Example</h3>
+        <p>0</p>
+        <p class="move-right">mr</p>
+        <p>0</p>
+        <p class="move-left">ml</p>
+        <p>0</p>
+        <p class="move-down">md</p>
+        <h3>Scale Example</h3>
+        <p>Hello</p>
+        <p class="transformed">Hello</p>
+        <h3>Rotate Example</h3>
+        <p>Whoa!</p>
+        <p class="rotated">r</p>
+        
+        
+    </body>
+</html>
