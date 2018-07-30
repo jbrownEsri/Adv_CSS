@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+    body {
+        padding: 5px;
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+
+    header {
+        display: flex;
+        height: 10vh;
+        background-color: springgreen;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        border: 10px solid lightslategray;
+        border-radius: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: Lato;
+        margin: auto 20px;
+    }
+
+    footer {
+        /* display: flex; */
+        height: 10vh;
+        background-color: coral;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 10px solid lightslategray;
+        border-radius: 10px;
+    }
+
+    p {
+        font-family: Lato;
+        font-size: 20px;
+        color: white;
+        margin: auto 20px;
+    }
+
+    .main {
+        border: 10px solid slateblue;
+        border-radius: 10px;
+        display: flex;
+        flex: 2 2 50vh;
+    }
+
+    .middle {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: cadetblue;
+        width: 49%;
+        flex: 1 2 45vw;
+    }
+
+    .left {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: pink;
+        width: 24%;
+    }
+
+    .right {
+        border-radius: 10px;
+        padding: 10px;
+        background-color: darkgoldenrod;
+        width: 24%;
+    }
+
+    /* @media all and (max-width: 1800px) {
+        flex-flow: row nowrap;
+    } */
+
+    @media all and (max-width: 640px) {
+        body {
+            flex-flow: row wrap;
+        }
+        nav {
+            align-content: space-between;
+        }
+        header {
+            align-content: flex-start;
+            flex-basis: 600px;
+            order: 0;
+        }
+        main {
+            /* display: flex; */
+            /* flex-flow: row wrap; */
+            /* justify-content: stretch; */
+            flex: 2 2 600px;
+
+        }
+        .middle {
+            flex-basis: 600px;
+            order: 1;
+        }
+        .left {
+            flex-basis: 600px;
+            order: 2;
+        }
+        .right {
+            flex-basis: 600px;
+            order: 3;
+        }
+        .footer {
+            order: 4;
+        }
+
+    }
+</style>
+
+<body>
+    <header>
+        <div class="section">
+            <a href="#">Nav Left</a>
+        </div>
+        <div class="section">
+            <a href="#">Nav Right</a>
+        </div>
+    </header>
+    <div class="main">
+        <div class="aside left">Left Aside</div>
+        <div class="middle">Middle</div>
+        <div class="aside right">Right Aside</div>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+
+</html>

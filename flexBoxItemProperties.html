@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Examples</title>
+</head>
+<style>
+/* APPEARANCE STYLES*/
+    @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+
+    .box {
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: lato;
+    font-weight: 300;
+    box-sizing: border-box;
+    flex: 1 1 200px;
+    }
+
+    .box-1 {background: #e51400; }
+    .box-2 {background: #fa6800; flex: 2 1 500px}
+    .box-3 {background: #f0a30a; }
+    .box-4 {background: #e3c800; }
+    .box-5 {background: #a4c400; }
+    .box-6 {background: #60a917; }
+    .box-7 {background: #00aba9; }
+    .box-8 {background: #1ba1e2; } 
+    .box-9 {background: #aa00ff; }
+
+    /*  LAYOUT STYLES */
+
+    /* .container { */
+    
+    /* Intro */
+    
+    /* display: flex; /*Tells the interpreter we're going to be using flexBox!*/
+    /*border: 10px solid black; So we can see the container easily */
+
+    /* Manipulating along the main axis (justify-content)*/
+
+    /*flex-direction: row; DEFAULT SETTING*/
+    /* flex-direction: row-reverse; to make the content start from the right and got o the left */
+    /* flex-direction: column; Makes everything fit into one column, basically making things go vertical. */
+    /* flex-direction: column-reverse; Makes everything start from the bottom and go up, in one column */
+    /* FLEX WRAP */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; Keeps rows going left to right, but next row is higher, not underneath the last row. */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-direction: row-reverse; These two rows show that you can combine properties. */
+    /* height: 100vh; Sets the height to be 100% of the visible viewer */
+    /* justify-content: flex-end; Moves all content to the right but doesn't change the order. Default is flex-start*/
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; Single space on the outside left/right, and double space in the middle (single from element1 + single from element2) */
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px; These four properties divide content into two columns, add space around and set height so that the column split is enforced.*/
+    
+    /* Manipulating along the cross axis (align-items) */
+
+    /*display: flex; Tells the interpreter we're going to be using flexBox!*/
+    /* border: 10px solid black;*/
+    /* height: 100vh; */
+    /* align-items: flex-start; Aligns content to the top of the container */
+    /* align-items: flex-end; Aligns to the bottom of the container */
+    /* align-items: center; Aligns content to the middle of the container vertically */
+     
+    /*justify-content: center;
+    align-items: center; These two align the content to the middle horizontally and vertically within the container. */
+
+    /* align-items: baseline; Aligns content to the bottom of the text */
+    /* flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+
+    /* align-content Defines how space is distributed between content along the cross-axis. */
+
+    /* flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;  */
+    /* } */
+
+
+/* WORKING WITH FLEX-ITEMS NOW */
+
+    .container {
+        display: flex;
+        border: 20px solid black;
+        flex-direction: column;
+        height: 80vh;
+        
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <!-- <div class="box box-4">4</div>  -->
+        <!-- <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+        <div class="box box-7">7</div>
+        <div class="box box-8">8</div>
+        <div class="box box-9">9</div>   -->
+        </div>
+              
+</body>
+</html>

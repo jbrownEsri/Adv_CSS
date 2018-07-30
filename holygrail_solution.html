@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+    body {
+        display: flex;
+        margin: 0;
+        flex-flow: column;
+        font-family: Lato;
+        color: black;
+        font-size: 20px;
+        min-height: 100vh;
+        background: #2c3e50
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-family: Lato;
+        color: black;
+        font-size: 20px;
+    }
+
+    main {
+        display: flex;
+        min-height: 60vh;
+        flex-grow: 1;
+    }
+
+    main>*,
+    header,
+    footer {
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    article {
+        flex-basis: 60%;
+        background: #ecf0f1;
+        flex: 5 1 20%;
+    }
+
+    nav {
+        flex-basis: 20%;
+        background: #95a5a6;
+        order: -1;
+        flex: 1 1 20%;
+    }
+
+    aside {
+        flex: 1 1 20%;
+        background: #3498db;
+        flex-grow: 1;
+    }
+
+    header,
+    footer {
+        background: #1abc9c;
+        flex-basis: 100px;
+    }
+
+    @media all and (max-width: 640px) {
+        main {
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        nav {
+            order: 0;
+        }
+
+    }
+</style>
+
+<body>
+    <header>
+        <a href="#">Nav Left</a>
+        <a href="#">Nav Right</a>
+    </header>
+    <main>
+        <article>Main Content</article>
+        <nav>Side Nav</nav>
+        <aside>Aside</aside>
+    </main>
+    <footer>
+        Footer
+    </footer>
+</body>
+
+</html>
